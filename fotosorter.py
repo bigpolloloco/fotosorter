@@ -82,7 +82,6 @@ class FotoSorterApp:
         self.option2_button = tk.Button(self.button_frame, text="", width=20)
         self.option2_button.pack(side=tk.LEFT, padx=5)
         self._next_image()
-        self.root.mainloop()
 
     def _next_image(self):
         if not self.images:
@@ -150,4 +149,5 @@ class FotoSorterApp:
         return self.processed
 
 if __name__ == "__main__":
-    FotoSorterApp()
+    app = FotoSorterApp()
+    app.root.mainloop()
