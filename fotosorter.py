@@ -37,6 +37,8 @@ class FotoSorterApp:
         self.option2_button = None
         self.photo_cache = None
         self._show_category_window()
+        # start the Tk event loop so the category window is displayed
+        self.root.mainloop()
 
     def _show_category_window(self):
         win = tk.Toplevel()
